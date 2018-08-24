@@ -1,0 +1,127 @@
+/*-----------------------------------------
+
+    Education Through eXploration
+    Arizona State University           
+
+-----------------------------------------*/
+
+/*-----------------------------------------
+    Import Other Stylesheets      
+-----------------------------------------*/
+@import url("style_etx.css");
+
+
+/*-----------------------------------------
+    Background            
+-----------------------------------------*/
+.background{
+    background-color:#333333 !important;
+}
+.stageContainer .content{
+    border: 0px solid #333333 !important;
+    background: #333333 !important;
+}
+
+/*-----------------------------------------
+    Check Container            
+-----------------------------------------*/
+.checkContainer{
+    border:none !important;
+    border-top: 1px solid rgba(153, 153, 153, .4) !important;
+    border-radius:0;
+    background-color: #333333 !important;
+}
+.checkContainer .historyStepContainer:after {
+    content: '';
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+.checkContainer .icon-chevron-right, .checkContainer .icon-chevron-left{
+    border-color: rgba(255,255,255, 1);
+}
+.navigationContainer .navigationToggle{
+    color: rgba(255,255,255,0.6) !important;
+}
+.navigationContainer .navigationToggle:before{
+    background: url(https://style.smartsparrow.com/default-viewer-themes/1.9.1/assets/icon-history-light.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.feedbackContainer  .toggleFeedbackBtn .icon:before{
+    background: url(https://style.smartsparrow.com/default-viewer-themes/1.9.1/assets/icon-feedback-light.svg);
+}
+/*-----------------------------------------
+    Disable Check Button when Feedback is Onscreen            
+-----------------------------------------*/
+div#stage-feedback:before {
+    content: "";
+    background: rgba(51,51,51,0.5);
+}
+
+button.toggleFeedbackBtn div:after {
+content: "Open/Close Feedback";
+   color: #ffffff;
+}
+
+
+/*-----------------------------------------
+    Student Response and Prompt Styles             
+-----------------------------------------*/
+/*-- STUDENT RESPONSES --*/
+DIV[style*="rgba(235,235,235,1.0)"]{
+    padding: 10px !important;
+    box-sizing: border-box;
+}
+DIV[style*="rgba(235,235,235,1.0)"] P{
+    width:100% !important;    
+    font-family:OpenSans !important;
+}
+
+/*-----------------------------------------
+    Answer Mechanisms             
+-----------------------------------------*/
+/*-- SLIDER --*/
+#stage-stage .slider-input .ui-slider{
+  background: #EBEBEB;
+}
+#stage-stage .slider-input .ui-slider-handle {
+  background:#3398B9;
+}
+#stage-stage .slider-input .ui-slider-handle:active,
+#stage-stage .slider-input .ui-slider-handle:focus{
+  box-shadow: 0 0 0 4px rgba(0, 101, 134, .8);
+}
+#stage-stage .slider-input span:not(#sliderInputvalue){
+    color: #ebebeb;
+}
+/*-- MULTISELECT/MULTIPLE CHOICE --*/
+#stage-stage .mcq-input label span {
+    color:#EBEBEB;
+}
+
+/*-- DROPDOWNS --*/
+#stage-stage .dropdown-input label {
+    color: #EBEBEB;
+}
+
+/*-- PROMPTS --*/
+DIV[style*="rgba(204,229,238,1.0)"]{
+    padding: 10px !important;
+    box-sizing: border-box;
+}
+DIV[style*="rgba(204,229,238,1.0)"] P{
+    width:100% !important;    
+    font-family:OpenSans !important;
+}
+
+/*-- TEXT INPUT/TEXT AREA/NUMBER INPUT --*/
+#stage-stage .short-text-input  label,
+#stage-stage .long-text-input  label,
+#stage-stage .number-input label{
+    font-family: OpenSansBold !important;
+    color: #EBEBEB;
+}
+
+#stage-stage .number-input .unitsLabel{
+    color: #EBEBEB;
+}
+

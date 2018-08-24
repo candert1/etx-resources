@@ -1,0 +1,518 @@
+/*-----------------------------------------
+
+    Education Through eXploration
+    Arizona State University           
+
+-----------------------------------------*/
+
+
+/* Columns are for layout purposes. Viewable upon previewing lesson.*/
+/* 
+To utilize: 
+    In author mode of Smart Sparrow, add text to the stage. 
+    Change the background color to hex value: #123456, and opacity 0.7. 
+    Press enter/return inside the text to create additional columns (up to 5). 
+*/
+/*parent of columns*/
+.content div[style*="background-color:rgba(18,52,86,0.7)"]{
+    border-left: solid 25px transparent  !important;
+    border-right:solid 25px transparent  !important; 
+}
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p {
+    float: left;
+    background: darksalmon;
+}
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:not(:first-child) {margin: 0 auto 0 25px;}
+
+/*one column*/
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(1),
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(1) ~ p{
+    width: 100% !important;
+}
+/*two columns*/
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(2),
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(2) ~ p{
+    width: calc(50% - 12.5px) !important;
+}
+/*three columns*/
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(3),
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(3) ~ p{
+    width: calc(33.33% - 16.66px) !important;
+}
+/*four columns*/
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(4),
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(4) ~ p{
+    width: calc(25% - 18.75px) !important;
+}
+/*five columns*/
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(5),
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(5) ~ p{
+    width: calc(20% - 20px) !important;
+}
+
+
+
+
+/*-----------------------------------------
+    Fonts             
+-----------------------------------------*/
+@font-face {
+    font-family: FontAwesome4;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Font%20Awesome/FontAwesome.otf);
+}
+
+@font-face {
+    font-family: ArialNarrow;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Arial%20Narrow/ARIALN.TTF);
+    font-style: italic;
+}
+@font-face {
+    font-family: ArialNarrowBold;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Arial%20Narrow/ARIALNB.TTF);
+    font-style: italic;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: MontserratBold;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Montserrat/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Open%20Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSansBold;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Open%20Sans/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: OpenSansItalic;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Open%20Sans/OpenSans-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: PTSerif;
+    src: url(https://dev-etx.ws.asu.edu/fonts/PT%20Serif/PT_Serif-Web-Regular.ttf);
+}
+@font-face {
+    font-family: PTSerifBold;
+    src: url(https://dev-etx.ws.asu.edu/fonts/PT%20Serif/PT_Serif-Web-Bold.ttf);
+}
+@font-face {
+    font-family: PTSerifItalic;
+    src: url(https://dev-etx.ws.asu.edu/fonts/PT%20Serif/PT_Serif-Web-Italic.ttf);
+}
+@font-face {
+    font-family: PTSerifBoldItalic;
+    src: url(https://dev-etx.ws.asu.edu/fonts/PT%20Serif/PT_Serif-Web-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Quintessential;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Quintessential/Quintessential-Regular.ttf);
+}
+@font-face {
+    font-family: QuintessentialBold;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Quintessential/Quintessential-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: QuintessentialItalic;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Quintessential/Quintessential-Regular.ttf);
+    font-style: italic;
+}
+
+/*-----------------------------------------
+    Font Styles             
+-----------------------------------------*/
+
+.content H1 SPAN STRONG[style*="font-family:Arial;"],
+.content H2 SPAN STRONG[style*="font-family:Arial;"]{
+    font-family:MontserratBold !important; 
+}
+.content H3 SPAN[style*="font-family:Arial;"]{
+    font-family:OpenSans !important; 
+}
+
+P SPAN[style*="font-family:Arial;"]{    
+    font-family:OpenSans !important;
+}
+P SPAN STRONG[style*="font-family:Arial;"]{    
+    font-family:OpenSansBold !important;
+}
+P SPAN EM[style*="font-family:Arial;"]{    
+    font-family:OpenSansItalic !important;
+}
+
+
+/*-----------------------------------------
+    Lesson Objectives Styles             
+-----------------------------------------*/
+.lesson-objective{ 
+    background-color: transparent !important;  
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(65%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+}
+.lesson-objective h1{
+    padding-top: 20px !important;
+    /*padding-bottom: 20px !important;*/
+    position: relative ;
+    left: 165px;
+}
+.lesson-objective h1 span{
+    font-family:ArialNarrow !important;
+   
+    
+}
+.lesson-objective h1 span[style*="color:rgba(110,189,153,1.0);"] strong{
+    font-family:ArialNarrowBold !important;
+}
+
+.lesson-objective-list{
+    font-family: Arial;
+}
+.lesson-objective-list ul{
+    font-family: Arial;
+    padding-left: 0px !important;
+}
+
+.lesson-objective-list ul li{
+    font-family: Arial;
+    margin-left:0;
+    list-style: none;
+    padding-right: 50px !important;
+}
+.lesson-objective-list ul li p{
+    margin-bottom:20px;
+    text-indent: -28px;
+    margin-left: 25px;
+}
+.lesson-objective-list ul li p span:before{
+    content: "\f0c8";
+    font-family: FontAwesome4 !important;
+    color:#6EBD99;
+    margin-right: 10px;
+}
+
+
+/*-----------------------------------------
+    General Buttons             
+-----------------------------------------*/
+
+.content button{
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    color:#ffffff;
+    min-width:100px;
+    height:40px;
+    border-radius:3px;
+    border:none;
+    -moz-box-shadow:   2px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 2px 2px rgba(0,0,0,.2);
+    box-shadow:         2px 2px rgba(0,0,0,.2);
+    padding: 0 20px;    
+    cursor: pointer;
+}
+.content button:active {        
+    -moz-box-shadow: inset 0px 2px rgba(0,0,0,.4);
+    -webkit-box-shadow: inset 0px 2px rgba(0,0,0,.4);
+    box-shadow: inset 0px 2px rgba(0,0,0,.4); 
+    color:rgba(255,255,255,.9); 
+    transform: translateY(1px);
+}
+.content button:disabled{ 
+    background-color: #858585;
+    cursor: default;
+}
+
+.content button:disabled:active {          
+    -moz-box-shadow: inset 0px 0px rgba(0,0,0,0);
+    -webkit-box-shadow: inset 0px 0px rgba(0,0,0,0);
+    box-shadow: inset 0px 0px rgba(0,0,0,0);
+    color:rgba(255,255,255,.9); 
+    transform: translateY(0px);
+}
+/*-- BUTTONS primary --*/
+.primary{ 
+    background-color:#006586;
+    border-bottom:solid 0px red;
+}
+.primary:hover{ background-color:#00516B;}
+
+/*-- BUTTONS secondary --*/
+.secondary{ background-color:#D77009; }
+.secondary:hover{ background-color:#AC5A07;}
+
+/*-----------------------------------------
+    Check Button            
+-----------------------------------------*/
+.checkContainer .buttonContainer .checkBtn, 
+.checkContainer .closeFeedbackBtn, 
+.checkContainer .showSolnBtn{
+    background-color: #006586 !important;
+}
+.checkContainer .buttonContainer .checkBtn:hover, 
+.checkContainer .closeFeedbackBtn:hover, 
+.checkContainer .showSolnBtn:hover{
+    background-color: #006586 !important;
+}
+.checkContainer .buttonContainer .checkBtn:focus, 
+.checkContainer .closeFeedbackBtn:focus, 
+.checkContainer .showSolnBtn:focus{
+    background-color: #006586 !important;
+}
+.checkContainer .buttonContainer .checkBtn:active, 
+.checkContainer .closeFeedbackBtn:active, 
+.checkContainer .showSolnBtn:active{
+    background-color: #006586 !important;
+}
+/*-----------------------------------------
+    Disable Check Button when Feedback is Onscreen            
+-----------------------------------------*/
+div#stage-feedback:before {
+    content: "";
+    width: 145px;
+    height: 50px;    
+    position: absolute;
+    right: -25px;
+    bottom: -80px;
+    /*background: rgba(51,51,51,0.5);*/
+}
+
+button.toggleFeedbackBtn div:after {
+    content: "Open/Close Feedback";    
+    display: inline;
+    padding: 0 10px;
+   /*color: #ffffff;*/
+}
+.feedbackContainer .toggleFeedbackBtn {
+    left: 70px;
+}
+
+
+/*-----------------------------------------
+    Positions            
+-----------------------------------------*/
+/*none for now*/
+
+/*-----------------------------------------
+    Answer Mechanisms             
+-----------------------------------------*/
+
+/*-- CONTENT CONTAINER --*/
+.content-container{
+  border-radius:0 0 3px 3px;
+  opacity:.9;
+}
+/*-- NAVIGATION BUTTONS --*/
+/*-- Default --
+.aelp-sim BUTTON.button{*/
+.etxButton{
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    color:#ffffff;
+    min-width:100px;
+    height:40px;
+    background-color:#006586;
+    border-radius:3px;
+    border:none;
+    -moz-box-shadow:   2px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 2px 2px rgba(0,0,0,.2);
+    box-shadow:         2px 2px rgba(0,0,0,.2);
+    padding: 0 20px;    
+    cursor: pointer;
+}
+.etxButton:hover{
+    background-color:#AC5A07;
+}
+.etxButton:active {        
+    -moz-box-shadow: inset 0px 2px rgba(0,0,0,.4);
+    -webkit-box-shadow: inset 0px 2px rgba(0,0,0,.4);
+    box-shadow: inset 0px 2px rgba(0,0,0,.4); 
+    color:rgba(255,255,255,.9); 
+    transform: translateY(1px);
+}
+.etxButton:disabled{ 
+    background-color: #858585;
+    cursor: default;
+}
+
+.etxButton:disabled:active {          
+    -moz-box-shadow: inset 0px 0px rgba(0,0,0,0);
+    -webkit-box-shadow: inset 0px 0px rgba(0,0,0,0);
+    box-shadow: inset 0px 0px rgba(0,0,0,0);
+    color:rgba(255,255,255,.9); 
+    transform: translateY(0px);
+}
+/*-- SLIDER --*/
+#stage-stage .slider-input .ui-slider{
+  background: #EBEBEB;
+}
+#stage-stage .slider-input .ui-slider-handle {
+  background:#006586;
+}
+#stage-stage .slider-input .ui-slider-handle:active,
+#stage-stage .slider-input .ui-slider-handle:focus{
+  box-shadow: 0 0 0 4px rgba(0, 101, 134, .2);
+}
+/*-- CAROUSEL --*/
+.owl-carousel{
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background: #EBEBEB;
+    box-sizing: border-box;
+    padding: 10px 5px;
+}
+.owl-carousel .owl-dots{
+    display:none;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+    background: #006586;
+    color: #ffffff;
+}
+
+.owl-carousel .owl-nav button.owl-prev SPAN, 
+.owl-carousel .owl-nav button.owl-next SPAN {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+}
+/*-- MULTISELECT/MULTIPLE CHOICE --*/
+#stage-stage .mcq-input input:checked+label:before {
+    box-shadow: inset 0 0 0 20px #006586;
+}
+#stage-stage .mcq-input input:checked:focus+label:before {
+    box-shadow: inset 0 0 0 20px #006586, 0 0 0 4px rgba(0,151,167,0.4);
+}
+#stage-stage .mcq-input input:focus+label:before {
+    box-shadow: inset 0 0 0 2px #006586, 0 0 0 4px rgba(0,151,167,0.4);
+}
+#stage-stage .mcq-input label span {
+    font-family: OpenSans,sans-serif !important;
+}
+/*-- TEXT INPUT/TEXT AREA/NUMBER INPUT --*/
+#stage-stage .short-text-input input,
+#stage-stage .long-text-input textarea,
+#stage-stage .number-input input{
+  color: #333333;
+  background-color: #ffffff !important;
+  border-radius:2px;
+}
+#stage-stage .short-text-input input:focus,
+#stage-stage .long-text-input textarea:focus,
+#stage-stage .number-input input:focus{
+  border-color: #006586 !important;
+}
+#stage-stage .short-text-input  label,
+#stage-stage .long-text-input  label,
+#stage-stage .number-input label{
+    font-family: OpenSansBold !important;
+    color: #5C5C5C;
+}
+
+#stage-stage .short-text-input input::placeholder,
+#stage-stage .long-text-input textarea::placeholder,
+#stage-stage .number-input input::placeholder {
+    font-family: OpenSans !important;
+    color: #717171;
+    opacity: 1; /* Firefox */
+}
+
+#stage-stage .short-text-input input:-ms-input-placeholder,
+#stage-stage .long-text-input textarea:-ms-input-placeholder,
+#stage-stage .number-input input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: OpenSans !important;
+    color: #717171;
+}
+
+#stage-stage .short-text-input input::-ms-input-placeholder,
+#stage-stage .long-text-input textarea::-ms-input-placeholder,
+#stage-stage .number-input input::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: OpenSans !important;
+    color: #717171;
+}
+/*-- DROPDOWN --*/
+#stage-stage .dropdown-input label {
+    font-family: OpenSansBold !important; 
+    color:#717171;
+}
+#stage-stage .dropdown-input select{
+  color: #333333;
+  background-color: #ffffff !important;
+  background: none;
+  position: relative;
+}
+#stage-stage .dropdown-input:after {
+    content: '\f078';
+    font-family: FontAwesome4;
+    /*font-family: "FontAwesome", sans-serif;*/
+    color: #006586;
+    right: 11px;
+    bottom: 0px;
+    height: 35px;
+    padding: 15px 0px 0px 8px;
+    border-left: 0px solid #006586;
+    position: absolute;
+    pointer-events: none;
+    line-height: 8px;
+}
+#stage-stage .dropdown-input select:focus{
+  border-color: #006586 !important;
+}
+
+/*-----------------------------------------
+    Pop-up Buttons             
+-----------------------------------------*/
+.content .info-icon:not(.no-restyle){
+    background: none;
+    background-color: #9D7DAE !important;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1'><text x='0' y='18' fill='white' font-size='24px' font-weight='bold' font-family='arial, sans-serif'>?</text></svg>");
+    background-position:center;
+    background-size: 16px 19px;
+    background-repeat: no-repeat;
+
+    -moz-box-shadow:   2px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 2px 2px rgba(0,0,0,.2);
+    box-shadow:         2px 2px rgba(0,0,0,.2);
+}
+.content .info-icon:not(.no-restyle):hover {
+    background-color: #7C5293 !important;
+}
+.content .info-icon:not(.no-restyle):active {        
+    -moz-box-shadow: inset 0px 2px rgba(0,0,0,.4);
+    -webkit-box-shadow: inset 0px 2px rgba(0,0,0,.4);
+    box-shadow: inset 0px 2px rgba(0,0,0,.4); 
+    transform: translateY(1px);
+}
+
+/*-----------------------------------------
+    Pop-up Container/Background             
+-----------------------------------------*/
+.info-icon-popup:not(.no-restyle).bg-off{
+    background: rgba(255, 255, 255, .1)!important;
+    border: 0px solid #d9d9de !important;
+}
+
+/*-----------------------------------------
+    Pop-up Close Button             
+-----------------------------------------*/
+.info-icon-popup:not(.no-restyle) .close{
+    /*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1'><text x='0' y='18' fill='#5C5C5C' font-size='24px' font-weight='bold' font-family='arial, sans-serif'>×</text></svg>")  !important;
+    background-position: center  !important;
+    background-size: 16px 19px  !important;
+    background-repeat: no-repeat  !important;*/
+    box-shadow: none;
+    min-width: auto;
+}
+.info-icon-popup:not(.no-restyle) .close span{
+    /*display: none;*/
+}

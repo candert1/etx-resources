@@ -1,0 +1,71 @@
+/*-----------------------------------------
+
+    Education Through eXploration
+    Arizona State University           
+
+-----------------------------------------*/
+
+/*-----------------------------------------
+    Import Other Stylesheets      
+-----------------------------------------*/
+@import url("style_etx.css");
+
+
+
+/*-----------------------------------------
+    Background            
+-----------------------------------------*/
+.background{
+    background-color:#ffffff !important;
+}
+.stageContainer .content{
+    border: 0px solid #d9d9de !important;
+}
+.checkContainer{
+    border:none !important;
+    border-top: 1px solid #d9d9de !important;
+    border-radius:0;
+    background-color: #ffffff;
+}
+
+
+/*-----------------------------------------
+    Disable Check Button when Feedback is Onscreen            
+-----------------------------------------*/
+div#stage-feedback:before {
+    content: "";
+    background: rgba(255,255,255,0.5);
+}
+
+button.toggleFeedbackBtn div:after {
+content: "Open/Close Feedback";
+   color: #333333;
+}
+
+
+/*-----------------------------------------
+    Student Response and Prompt Styles             
+-----------------------------------------*/
+/*-- STUDENT RESPONSES --*/
+DIV[style*="rgba(235,235,235,1.0)"]{
+    padding: 10px !important;
+    box-sizing: border-box;
+}
+DIV[style*="rgba(235,235,235,1.0)"] P{
+    width:100% !important;    
+    font-family:OpenSans !important;
+}
+
+/*-- PROMPTS --*/
+DIV[style*="rgba(204,229,238,1.0)"]{
+    padding: 10px !important;
+    box-sizing: border-box;
+}
+DIV[style*="rgba(204,229,238,1.0)"] P{
+    width:100% !important;    
+    font-family:OpenSans !important;
+}
+
+
+
+
