@@ -50,8 +50,79 @@ To utilize:
     width: calc(20% - 20px) !important;
 }
 
+/*-----------------------------------------
+    Color Swatch Variables            
+-----------------------------------------*/
+:root {
+    /*Blue (oceanic)*/
+    --blue100:#006586;      --blue100_a:rgba(0, 101, 134, 1);
+    --blue80:#3398B9;       --blue80_a:rgba(0, 101, 134, .8);
+    --blue60:#66B2CB;       --blue60_a:rgba(0, 101, 134, .6);
+    --blue40:#99CBDC;       --blue40_a:rgba(0, 101, 134, .4);
+    --blue20:#CCE5EE;       --blue20_a:rgba(0, 101, 134, .2);
+    --blue40dark:#003D50;
+    --blue20dark:#00516B;
 
+    /*Orange (autumn)*/
+    --orange100:#D77009;      --orange100_a:rgba(215, 112, 9, 1);
+    --orange80:#DF8D3A;       --orange80_a:rgba(215, 112, 9, .8);
+    --orange60:#E7A96B;       --orange60_a:rgba(215, 112, 9, .6);
+    --orange40:#EFC69D;       --orange40_a:rgba(215, 112, 9, .4);
+    --orange20:#FFE8CC;       --orange20_a:rgba(215, 112, 9, .2);
+    --orange40dark:#814305;
+    --orange20dark:#AC5A07;
 
+    /*Purple (royal)*/
+    --purple100:#5B2778;      --purple100_a:rgba(91, 39, 120, 1);
+    --purple80:#7C5293;       --purple80_a:rgba(91, 39, 120, .8);
+    --purple60:#9D7DAE;       --purple60_a:rgba(91, 39, 120, .6);
+    --purple40:#BDA9C9;       --purple40_a:rgba(91, 39, 120, .4);
+    --purple20:#DED4E4;       --purple20_a:rgba(91, 39, 120, .2);
+    --purple40dark:#371748;
+    --purple20dark:#491F60;
+
+    /*Green (pine)*/
+    --green100:#195E2F;      --green100_a:rgba(25, 94, 47, 1);
+    --green80:#477E59;       --green80_a:rgba(25, 94, 47, .8);
+    --green60:#759E82;       --green60_a:rgba(25, 94, 47, .6);
+    --green40:#A3BFAC;       --green40_a:rgba(25, 94, 47, .4);
+    --green20:#D1DFD5;       --green20_a:rgba(25, 94, 47, .2);
+    --green40dark:#0F381C;
+    --green20dark:#144B26;
+
+    /*Red (cardinal)*/
+    --red100:#BD1F2E;      --red100_a:rgba(189, 31, 46, 1);
+    --red80:#CA4C58;       --red80_a:rgba(189, 31, 46, .8);
+    --red60:#D77982;       --red60_a:rgba(189, 31, 46, .6);
+    --red40:#E5A5AB;       --red40_a:rgba(189, 31, 46, .4);
+    --red20:#F2D2D5;       --red20_a:rgba(189, 31, 46, .2);
+    --red40dark:#71131C;
+    --red20dark:#971925;
+
+    /*Yellow (canary)*/
+    --yellow100:#FCE300;      --yellow100_a:rgba(252, 227, 0, 1);
+    --yellow80:#FDE933;       --yellow80_a:rgba(252, 227, 0, .8);
+    --yellow60:#FDEE66;       --yellow60_a:rgba(252, 227, 0, .6);
+    --yellow40:#FEF499;       --yellow40_a:rgba(252, 227, 0, .4);
+    --yellow20:#FEF9CC;       --yellow20_a:rgba(252, 227, 0, .2);
+    --yellow40dark:#978800;
+    --yellow20dark:#CAB600;
+
+    /*Dark Gary (graphite)*/
+    --grayDark100:#333333;      --grayDark100_a:rgba(51, 51, 51, 1);
+    --grayDark80:#484848;       --grayDark80_a:rgba(51, 51, 51, .8);
+    --grayDark60:#5C5C5C;       --grayDark60_a:rgba(51, 51, 51, .6);
+    --grayDark40:#717171;       --grayDark40_a:rgba(51, 51, 51, .4);
+    --grayDark20:#858585;       --grayDark20_a:rgba(51, 51, 51, .2);
+
+    /*Light Gray (overcast)*/
+    --lightDark100:#999999;      --lightDark100_a:rgba(153, 153, 153, 1);
+    --lightDark80:#ADADAD;       --lightDark80_a:rgba(153, 153, 153, .8);
+    --lightDark60:#C2C2C2;       --lightDark60_a:rgba(153, 153, 153, .6);
+    --lightDark40:#D6D6D6;       --lightDark40_a:rgba(153, 153, 153, .4);
+    --lightDark20:#EBEBEB;       --lightDark20_a:rgba(153, 153, 153, .2);  
+
+}
 
 /*-----------------------------------------
     Fonts             
@@ -124,6 +195,22 @@ To utilize:
     src: url(https://dev-etx.ws.asu.edu/fonts/Quintessential/Quintessential-Regular.ttf);
     font-style: italic;
 }
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Playfair%20Display/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplayBold;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Playfair%20Display/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplayItalic;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Playfair%20Display/PlayfairDisplay-Italic.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplayBoldItalic;
+    src: url(https://dev-etx.ws.asu.edu/fonts/Playfair%20Display/PlayfairDisplay-BoldItalic.ttf);
+}
 
 /*-----------------------------------------
     Font Styles             
@@ -175,7 +262,15 @@ P SPAN EM[style*="font-family:Arial;"]{
 }
 
 .lesson-objective-list{
-    font-family: Arial;
+    font-family: Arial !important;
+    padding-top: 20px !important;
+    background-color: transparent !important;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.8)), color-stop(100%, rgba(0,0,0,0.6)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
 }
 .lesson-objective-list ul{
     font-family: Arial;
@@ -192,6 +287,9 @@ P SPAN EM[style*="font-family:Arial;"]{
     margin-bottom:20px;
     text-indent: -28px;
     margin-left: 25px;
+}
+.lesson-objective-list ul li p span{
+    font-family: Arial !important;
 }
 .lesson-objective-list ul li p span:before{
     content: "\f0c8";
@@ -497,10 +595,16 @@ button.toggleFeedbackBtn div:after {
 /*-----------------------------------------
     Pop-up Container/Background             
 -----------------------------------------*/
-.info-icon-popup:not(.no-restyle).bg-off{
+.info-icon-popup:not(.no-restyle).bg-transparency{
     background: rgba(255, 255, 255, .1)!important;
     border: 0px solid #d9d9de !important;
 }
+.info-icon-popup:not(.no-restyle).bg-off{
+    background: rgba(255, 255, 255, .0)!important;
+    border: 0px solid #d9d9de !important;
+}
+
+.hmmmmm{}
 
 /*-----------------------------------------
     Pop-up Close Button             
@@ -515,4 +619,9 @@ button.toggleFeedbackBtn div:after {
 }
 .info-icon-popup:not(.no-restyle) .close span{
     /*display: none;*/
+}
+.info-icon-popup:not(.no-restyle).bg-off .info-icon-popup:not(.no-restyle) .close{
+    box-shadow: 0 0 3px black;
+    background: rgb(255, 255, 255) !important;
+    min-width: auto;
 }
