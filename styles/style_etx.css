@@ -394,6 +394,15 @@ button.toggleFeedbackBtn div:after {
     left: 70px;
 }
 
+/*-----------------------------------------
+    Feedback states            
+-----------------------------------------*/
+/*-- dividers between combined states--*/
+#stage-feedback .content div:not(:last-child) div p:last-child {
+    padding-bottom: 5px !important;
+    margin-bottom: 5px;
+    border-bottom: solid 1px #ebebeb;
+}
 
 /*-----------------------------------------
     Positions            
