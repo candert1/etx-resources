@@ -649,7 +649,7 @@ button.toggleFeedbackBtn div:after {
 /*-----------------------------------------
     Hotspot            
 -----------------------------------------*/
-.pin-icon.pin-icon-label svg path:first-child {
+.pin-icon svg path:first-child {
     stroke: rgba(255,255,255,.2) !important;
     stroke-width: .5px !important;
 }
