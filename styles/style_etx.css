@@ -234,6 +234,7 @@ To utilize:
 }
 .infiniscope-logo-link p a span {
     color: transparent  !important;
+    white-space:pre-line;
 }
 
 
