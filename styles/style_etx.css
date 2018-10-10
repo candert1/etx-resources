@@ -213,6 +213,32 @@ To utilize:
 }
 
 /*-----------------------------------------
+    Infiniscope Logo Link             
+-----------------------------------------*/
+/*textbox in SPR with classname applied*/
+.infiniscope-logo-link {
+    position: fixed !important;
+    top: 9px !important;
+    left: 10px !important;
+    z-index: 10000000000000000 !important;
+    background-color: white !important;
+    background-image: URL('https://candert1.github.io/etx-resources/images/infiniscope-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    overflow: hidden !important;
+    height: 41px;
+    box-sizing: border-box;
+    border-right: solid 1px black!important;
+    padding: 0 !important;
+}
+.infiniscope-logo-link p a span {
+    color: transparent  !important;
+}
+
+
+
+/*-----------------------------------------
     Font Styles             
 -----------------------------------------*/
 
