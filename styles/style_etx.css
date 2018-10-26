@@ -20,7 +20,7 @@ To utilize:
 }
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p {
     float: left;
-    background: darksalmon;
+    background: #fef9cc;
 }
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:not(:first-child) {margin: 0 auto 0 25px;}
 
