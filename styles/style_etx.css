@@ -22,7 +22,7 @@ To utilize:
     float: left;
     background: #fef9cc;
 }
-.content div[style*="background-color:rgba(18,52,86,0.7)"] p:not(:first-child) {margin: 0 auto 0 25px;}
+.content div[style*="background-color:rgba(18,52,86,0.7)"] p:not(:first-child) {margin: 0 auto 0 20px;}
 
 /*one column*/
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(1),
