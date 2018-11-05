@@ -15,8 +15,8 @@ To utilize:
 */
 /*parent of columns*/
 .content div[style*="background-color:rgba(18,52,86,0.7)"]{
-    border-left: solid 25px transparent  !important;
-    border-right:solid 25px transparent  !important; 
+    border-left: solid 20px transparent  !important;
+    border-right:solid 20px transparent  !important; 
 }
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p {
     float: left;
@@ -32,22 +32,22 @@ To utilize:
 /*two columns*/
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(2),
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(2) ~ p{
-    width: calc(50% - 12.5px) !important;
+    width: calc(50% - 10px) !important;
 }
 /*three columns*/
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(3),
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(3) ~ p{
-    width: calc(33.33% - 16.66px) !important;
+    width: calc(33.33% - 13.2px) !important;
 }
 /*four columns*/
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(4),
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(4) ~ p{
-    width: calc(25% - 18.75px) !important;
+    width: calc(25% - 15px) !important;
 }
 /*five columns*/
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(5),
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(5) ~ p{
-    width: calc(20% - 20px) !important;
+    width: calc(20% - 16px) !important;
 }
 
 /*-----------------------------------------
