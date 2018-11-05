@@ -37,7 +37,7 @@ To utilize:
 /*three columns*/
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(3),
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(3) ~ p{
-    width: calc(33.33% - 20px) !important;
+    width: calc(33.33% - 13.3px) !important;
 }
 /*four columns*/
 .content div[style*="background-color:rgba(18,52,86,0.7)"] p:first-child:nth-last-child(4),
