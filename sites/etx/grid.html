@@ -28,12 +28,18 @@
 			table, tr, td{
 				padding:0;
 				margin:0;
+				border:0;
+				text-align: center;
+				border-spacing: 0px;
 			}
 			table.col-examples tr td:nth-child(odd){
 				width:20px;
 			}
 			table.col-examples tr td:nth-child(even){
 				background-color:#fef9cc;
+			}
+			table#1-2 td:nth-child(even):first-of-type{
+				width: calc(33.33% - 13.6px) !important;
 			}
 
 
@@ -70,6 +76,7 @@
 			<p>176</p>
 			<p>176</p>
 		</div>
+		<br />
 		<p>You can span columns as needed. For example:</p>
 		<p><strong>1/3 + 2/3</strong></p>
 		<table id="1_2" class='col-examples'>
