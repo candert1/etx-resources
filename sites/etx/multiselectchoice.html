@@ -59,6 +59,12 @@
 			    background: transparent;
 			    transform: translateY(-50%);
 			}
+			#stage-stage .mcq-input input:focus+label:before {
+			    box-shadow: inset 0 0 0 2px #006586, 0 0 0 4px rgba(0,151,167,0.4);
+			}
+			#stage-stage .mcq-input input:checked:focus+label:before {
+			    box-shadow: inset 0 0 0 20px #006586, 0 0 0 4px rgba(0,151,167,0.4);
+			}
 			#stage-stage .mcq-input label div {
 			    display: block;
 			    position: static !important;
