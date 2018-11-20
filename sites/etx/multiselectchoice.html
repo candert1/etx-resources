@@ -55,7 +55,7 @@
 			#stage-stage .mcq-input label:before {
 			    content: '';
 			    font-family: FontAwesome4;
-			    color:red;
+			    color:white;
 			    position: absolute;
 			    left: 0;
 			    top: 50%;
@@ -90,23 +90,39 @@
 			    box-shadow: inset 0 0 0 2px #006586, 0 0 0 4px rgba(0,151,167,0.4);
 			}
 			#stage-stage .mcq-input input:checked:focus+label:before {
-				content:"LOL4";
+				content:"";
 			    box-shadow: inset 0 0 0 20px #006586, 0 0 0 4px rgba(0,151,167,0.4);
 			}
 			#stage-stage .mcq-input input[type=radio]:checked:focus+label:before {
 				content:"\f111";
+				width: 8px;
+			    height: 8px;
+			    padding: 6px;
+			    font-size: 8px;
 			    box-shadow: inset 0 0 0 20px #006586, 0 0 0 4px rgba(0,151,167,0.4);
 			}
 			#stage-stage .mcq-input input[type=checkbox]:checked:focus+label:before {
 				content:"\f00c";
+				font-size: 14px;
+			    padding: 3px;
+			    width: 14px;
+			    height: 14px;
 			    box-shadow: inset 0 0 0 20px #006586, 0 0 0 4px rgba(0,151,167,0.4);
 			}
 			#stage-stage .mcq-input input[type=radio]:checked+label:before {
 				content:"\f111";
+				width: 8px;
+			    height: 8px;
+			    padding: 6px;
+			    font-size: 8px;
 			    box-shadow: inset 0 0 0 20px #006586;
 			}
 			#stage-stage .mcq-input input[type=checkbox]:checked+label:before {
 				content:"\f00c";
+				font-size: 14px;
+			    padding: 3px;
+			    width: 14px;
+			    height: 14px;
 			    box-shadow: inset 0 0 0 20px #006586;
 			}
 			#stage-stage .mcq-input label div {
@@ -118,7 +134,7 @@
 			#stage-stage .mcq-input input[type=radio]+label:after {
 			    height: 6px;
 			    width: 6px;
-			    content: 'LOL2';
+			    content: '';
 			    transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
 			    transform: scale(.4) translate(-50%, -50%);
 			    transform-origin: top left;
@@ -134,7 +150,7 @@
 			#stage-stage .mcq-input input[type=checkbox]+label:after {
 			    height: 11px;
 			    width: 6px;
-			    content: 'LOL1';
+			    content: '';
 			    transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
 			    border: 2px solid #ffffff;
 			    border-top: 0;
