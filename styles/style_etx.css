@@ -677,7 +677,7 @@ button.toggleFeedbackBtn div:after {
     /*display: none;*/
 }
 .info-icon-popup:not(.no-restyle).bg-off .info-icon-popup:not(.no-restyle) .close,
-.info-icon-popup:not(.no-restyle).bg-transparency .close{
+.info-icon-popup:not(.no-restyle).bg-bg-lightbox .close{
     box-shadow: 0 0 3px black;
     background: rgb(255, 255, 255) !important;
     min-width: auto;
