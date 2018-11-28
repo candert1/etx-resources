@@ -696,7 +696,7 @@ button.toggleFeedbackBtn div:after {
 
 iframe#GraphingRhinoPoop {
     margin-top: 20px;
-    background-color: pink;
+    /*background-color: pink; /* should get overwritten by inline styles */
 }
 
 iframe#GraphingRhinoPoop .lineEquation.mathquill-rendered-math.hasCursor{display: none !important;}
