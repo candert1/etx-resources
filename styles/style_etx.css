@@ -701,3 +701,5 @@ iframe#GraphingRhinoPoop {
 
 iframe#GraphingRhinoPoop .lineEquation.mathquill-rendered-math.hasCursor{display: none !important;}
 iframe#GraphingRhinoPoop .mainScreen .scene .graph .jsxbox .curveLabel .lineEquation{display: none !important;}
+iframe#GraphingRhinoPoop html body div.mainScreen div#scene_main div.graph div#jsxbox div.curveLabel div.lineEquation{display: none !important;} 
+.lineEquation{display: none !important;}
