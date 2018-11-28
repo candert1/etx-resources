@@ -689,3 +689,7 @@ button.toggleFeedbackBtn div:after {
     stroke: rgba(255,255,255,.2) !important;
     stroke-width: .5px !important;
 }
+/*-----------------------------------------
+    Graphiing Component            
+-----------------------------------------*/
+.lineEquation.mathquill-rendered-math.hasCursor{display: none !important;}
