@@ -690,16 +690,16 @@ button.toggleFeedbackBtn div:after {
     stroke-width: .5px !important;
 }
 /*-----------------------------------------
-    Graphiing Component            
+    Graphing Component            
 -----------------------------------------*/
-.lineEquation.mathquill-rendered-math.hasCursor{display: none !important;}
-
+/*
 iframe#GraphingRhinoPoop {
     margin-top: 20px;
-    /*background-color: pink; /* should get overwritten by inline styles */
-}
+    background-color: pink !important; 
+}*/
 
+.lineEquation{display: none !important;}
+.lineEquation.mathquill-rendered-math.hasCursor{display: none !important;}
 iframe#GraphingRhinoPoop .lineEquation.mathquill-rendered-math.hasCursor{display: none !important;}
 iframe#GraphingRhinoPoop .mainScreen .scene .graph .jsxbox .curveLabel .lineEquation{display: none !important;}
 iframe#GraphingRhinoPoop html body div.mainScreen div#scene_main div.graph div#jsxbox div.curveLabel div.lineEquation{display: none !important;} 
-.lineEquation{display: none !important;}
