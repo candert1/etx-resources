@@ -696,7 +696,8 @@ button.toggleFeedbackBtn div:after {
 
 iframe#GraphingRhinoPoop {
     margin-top: 20px;
-    background-color: red !important;
+    background-color: darkcyan !important;
 }
 
 iframe#GraphingRhinoPoop .lineEquation.mathquill-rendered-math.hasCursor{display: none !important;}
+iframe#GraphingRhinoPoop .mainScreen .scene .graph .jsxbox .curveLabel .lineEquation{display: none !important;}
