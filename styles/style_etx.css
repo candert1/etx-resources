@@ -651,10 +651,6 @@ button.toggleFeedbackBtn div:after {
     background: rgba(255, 255, 255, .1)!important;
     border: 0px solid #d9d9de !important;
 }
-.info-icon-popup:not(.no-restyle).bg-lightbox{
-    background: rgba(0,0,0, .6)!important;
-    border: 0px solid #d9d9de !important;
-}
 .info-icon-popup:not(.no-restyle).bg-off{
     background: rgba(255, 255, 255, .0)!important;
     border: 0px solid #d9d9de !important;
