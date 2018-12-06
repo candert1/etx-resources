@@ -711,5 +711,5 @@ iframe#GraphingRhinoPoop html body div.mainScreen div#scene_main div.graph div#j
     right: 0 !important;
     left: 0 !important;
     bottom: 0 !important;
-    z-index:999999;
+    z-index:999999 !important;
 }
